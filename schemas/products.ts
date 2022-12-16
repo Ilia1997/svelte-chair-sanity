@@ -83,8 +83,9 @@ export default {
       type: 'richText',
     },
     {name: 'seoTitle', title: 'SEO title', type: 'string', group: 'seo'},
-    {name: 'seoKeywords', title: 'Keywords', type: 'string', group: 'seo'},
-    {name: 'seoSlug', title: 'Slug', type: 'slug', group: 'seo'},
-    {name: 'seoImage', title: 'Image', type: 'image', group: 'seo'},
+    {name: 'seoKeywords', title: 'SEO Keywords', type: 'string', group: 'seo'},
+    {name: 'seoDesc', title: 'SEO Description', type: 'string', group: 'seo'},
+    {name: 'seoSlug', title: 'SEO Slug', type: 'slug', group: 'seo'},
+    {name: 'seoImage', title: 'SEO Image', type: 'image', group: 'seo'},
   ],
 }
