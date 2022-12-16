@@ -13,11 +13,15 @@ export default {
       name: 'name',
       type: 'string',
       title: 'Name',
+      description: "required",
+      validation: (Rule: any) => Rule.required(),
     },
     {
       name: 'slug',
       title: 'Slug',
       type: 'slug',
+      description: "required",
+      validation: (Rule: any) => Rule.required(),
       options: {
         source: 'title',
         maxLength: 96,
@@ -27,11 +31,15 @@ export default {
       name: 'code',
       title: 'Code',
       type: 'string',
+      description: "required",
+      validation: (Rule: any) => Rule.required(),
     },
     {
       name: 'price',
       type: 'number',
       title: 'Price',
+      description: "required",
+      validation: (Rule: any) => Rule.required(),
     },
     {
       name: 'old_price',
