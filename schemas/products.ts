@@ -28,6 +28,11 @@ export default {
       },
     },
     {
+      name: 'short_desc',
+      title: 'Short description',
+      type: 'string',
+    },
+    {
       name: 'code',
       title: 'Code',
       type: 'string',
@@ -79,7 +84,7 @@ export default {
     },
     {
       name: 'body',
-      title: 'Body',
+      title: 'Full description',
       type: 'richText',
     },
     {name: 'seoTitle', title: 'SEO title', type: 'string', group: 'seo'},
