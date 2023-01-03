@@ -2,6 +2,12 @@ export default {
   name: 'globalSettings',
   type: 'document',
   title: 'Project Settings',
+  groups: [
+    {
+      name: 'seo',
+      title: 'SEO',
+    },
+  ],
   fields: [
     {
       name: 'name',
@@ -92,5 +98,8 @@ export default {
         disableAlpha: true
       }
     },
+    {name: 'seoTitle', title: 'SEO title', type: 'string', group: 'seo'},
+    {name: 'seoKeywords', title: 'SEO Keywords', type: 'string', group: 'seo'},
+    {name: 'seoDesc', title: 'SEO Description', type: 'string', group: 'seo'},
   ],
 }
