@@ -2,6 +2,12 @@ export default {
   name: 'post',
   title: 'Post',
   type: 'document',
+  groups: [
+    {
+      name: 'seo',
+      title: 'SEO',
+    },
+  ],
   fields: [
     {
       name: 'title',
@@ -56,6 +62,9 @@ export default {
       title: 'Body',
       type: 'richText',
     },
+    {name: 'seoTitle', title: 'SEO title', type: 'string', group: 'seo'},
+    {name: 'seoKeywords', title: 'SEO Keywords', type: 'string', group: 'seo'},
+    {name: 'seoDesc', title: 'SEO Description', type: 'string', group: 'seo'},
   ],
 
   preview: {
