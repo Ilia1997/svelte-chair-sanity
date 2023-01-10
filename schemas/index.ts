@@ -1,6 +1,7 @@
 import globalSettings from './globalSettings'
 import products from './products'
 import richText from './richText'
+import FAQ from './faq'
 import category from './category'
 import features from './features'
 import staticPages from './static'
@@ -10,4 +11,4 @@ import posts from './blog/posts'
 import blogCategory from './blog/blogCategory'
 import author from './blog/author'
 
-export const schemaTypes = [globalSettings, products, richText, category, features, staticPages, product_type, product_brand, posts, blogCategory, author]
+export const schemaTypes = [globalSettings, products, FAQ, richText, category, features, staticPages, product_type, product_brand, posts, blogCategory, author]
