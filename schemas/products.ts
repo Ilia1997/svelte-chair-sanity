@@ -13,14 +13,14 @@ export default {
       name: 'name',
       type: 'string',
       title: 'Name',
-      description: "required",
+      description: 'required',
       validation: (Rule: any) => Rule.required(),
     },
     {
       name: 'slug',
       title: 'Slug',
       type: 'slug',
-      description: "required",
+      description: 'required',
       validation: (Rule: any) => Rule.required(),
       options: {
         source: 'title',
@@ -36,14 +36,14 @@ export default {
       name: 'code',
       title: 'Code',
       type: 'string',
-      description: "required",
+      description: 'required',
       validation: (Rule: any) => Rule.required(),
     },
     {
       name: 'price',
       type: 'number',
       title: 'Price',
-      description: "required",
+      description: 'required',
       validation: (Rule: any) => Rule.required(),
     },
     {
@@ -56,10 +56,17 @@ export default {
       type: 'number',
       title: 'Sale',
     },
+    //available quantity
     {
       name: 'is_sale',
       type: 'boolean',
       title: 'Is sale',
+    },
+    {
+      name: 'available_quantity',
+      type: 'number',
+      title: 'Available quantity',
+      validation: (Rule: any) => Rule.required(),
     },
     {
       name: 'is_hero_slide',
