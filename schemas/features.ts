@@ -39,6 +39,7 @@ export default {
     {
       name: 'size',
       title: 'Product size',
+      description: 'value between "[]" symbols, for example: [XS]',
       type: 'string'
     },
     {
