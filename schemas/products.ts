@@ -79,6 +79,12 @@ export default {
       type: 'image',
     },
     {
+      name: 'imagesGallery',
+      title: 'Gallery',
+      type: 'array',
+      of: [{ type: 'image' }]
+     },
+    {
       name: 'categories',
       title: 'Categories',
       type: 'array',
@@ -89,6 +95,12 @@ export default {
       title: 'Features',
       type: 'array',
       of: [{type: 'reference', to: {type: 'features'}}],
+    },
+    {
+      name: 'reviews',
+      title: 'Reviews',
+      type: 'array',
+      of: [{type: 'reference', to: {type: 'product_reviews'}}],
     },
     {
       name: 'publishedAt',
