@@ -85,6 +85,12 @@ export default {
       of: [{ type: 'image' }]
      },
     {
+      name: 'labels',
+      title: 'Actions labels',
+      type: 'array',
+      of: [{ type: 'image' }]
+     },
+    {
       name: 'categories',
       title: 'Categories',
       type: 'array',
