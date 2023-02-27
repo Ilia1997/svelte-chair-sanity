@@ -66,7 +66,7 @@ export default {
       name: 'available_quantity',
       type: 'number',
       title: 'Available quantity',
-      validation: (Rule: any) => Rule.required(),
+      validation: (Rule: any) => Rule.required().min(0),
     },
     {
       name: 'is_hero_slide',
@@ -82,8 +82,8 @@ export default {
       name: 'imagesGallery',
       title: 'Gallery',
       type: 'array',
-      of: [{ type: 'image' }]
-     },
+      of: [{type: 'image'}],
+    },
     {
       name: 'categories',
       title: 'Categories',
